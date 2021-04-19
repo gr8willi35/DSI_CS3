@@ -4,7 +4,6 @@
 Predict the genre of a book based on text. sci-fi or not sci-fi
 
 
-
 get corpus:
   -separate book summaries out into seperate documents
   -Lowercase the text
