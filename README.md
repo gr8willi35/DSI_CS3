@@ -26,6 +26,8 @@ Lastly I looked to adjusting my threshold for acceptance to improve the model.  
 
 I used precision and recall from my confusion matricies to evaluate the effectiveness of my model.
 
+I also did a count vectorizer to see what words were most popular in the various outcomes. The purpose of this was to see if the stopwords list could be improved with these lists.
+
 get corpus:
   *separate book summaries out into seperate documents
   *Lowercase the text
