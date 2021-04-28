@@ -1,12 +1,16 @@
 # DSI Capstone 3
 ## Natural Language Processing Applied to Book Summaries.
 
-For my final capstone project I am analyzing the wikipedia summaries for novels and determining if they should be labeled as the genre "Science-Fiction" or not.
+For my final capstone project I am analyzing the wikipedia summaries for novels and determining if they should be categorized as "Science-Fiction" or not.
 
 The dataset is the CMU Book Summary Dataset and the link to download is [here](http://www.cs.cmu.edu/~dbamman/booksummaries.html "CMU Book Summary Dataset").
   
 
 The data came with 12841 entries and my first step was to clean the data and create a column of targets for a model.  Once the dataframe was organized I determined the genres were split at roughly 22.5% being science fiction and 77.5% not.
+
+
+![Data_proportions](https://user-images.githubusercontent.com/25779351/116435335-db78c400-a810-11eb-8fce-1703b87faa24.png)
+
 
 Next step in the process is to build a basic model, and using sklearn I was able to get a random forest model working. I chose Random forest because I wanted to avoid overfitting, and I am able to adjust threshold values easier.
 
