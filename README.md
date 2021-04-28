@@ -1,6 +1,10 @@
 # DSI Capstone 3
 ## Natural Language Processing Applied to Book Summaries.
 
+![scifibook](https://user-images.githubusercontent.com/25779351/116437779-635fcd80-a813-11eb-96ad-1b314be07485.jpg)
+
+
+
 For my final capstone project I am analyzing the wikipedia summaries for novels and determining if they should be categorized as "Science-Fiction" or not.
 
 The dataset is the CMU Book Summary Dataset and the link to download is [here](http://www.cs.cmu.edu/~dbamman/booksummaries.html "CMU Book Summary Dataset").
