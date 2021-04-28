@@ -2,7 +2,7 @@
 ## Natural Language Processing Applied to Book Summaries.
 
 
-<img src="https://user-images.githubusercontent.com/25779351/116443332-28609880-a819-11eb-8c9f-a6a75a0f4341.jpg" width="130" height="172">
+<img src="https://user-images.githubusercontent.com/25779351/116443332-28609880-a819-11eb-8c9f-a6a75a0f4341.jpg" width="260" height="344">
 
 
 
