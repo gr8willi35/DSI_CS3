@@ -1,8 +1,7 @@
 # DSI Capstone 3
 ## Natural Language Processing Applied to Book Summaries.
 
-![scifibook](https://user-images.githubusercontent.com/25779351/116437779-635fcd80-a813-11eb-96ad-1b314be07485.jpg)
-<img src="drawing.jpg" alt="drawing" width="200"/>
+![scifibook](https://user-images.githubusercontent.com/25779351/116437779-635fcd80-a813-11eb-96ad-1b314be07485.jpg)<img src="drawing.jpg" alt="drawing" width="200"/>
 
 
 
