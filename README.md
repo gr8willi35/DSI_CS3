@@ -28,7 +28,7 @@ After looking at my most important words I decided I needed to add a stopword li
 
 ![Final Important Words](https://user-images.githubusercontent.com/25779351/116606073-d0e42a80-a8f5-11eb-8475-7d578cb29623.png)
 
-Looking at these new words I extended my stop list, one of the words excluded was "planet", which may seem surprising considering there exists a strong correlation.  It seemed to over power the other words and excluded way more books and removing it was an improvement. Extending the stop words was an exercise in trial an error to see what worked and what didn't.
+Looking at these new words I extended my stop list, one of the words excluded was "planet", which may seem surprising considering there exists a strong correlation.  It seemed to overpower the other words excluding too many books and removing it was an improvement. Extending the stop words was an exercise in trial an error to see what worked and what didn't.
 
 I also tried to further improve the model with bi-grams but after a few attempts removed it as it instead reduced my overall accuracy and performance. The problem is bi-grams without implementing an extensive stopwords list increases the size of the corpus too much and the model can't decipher what is significant.
 
@@ -40,14 +40,14 @@ With these new adjustments I produced a Confusion Matrix and Roc Curve plot. The
 
 Lastly I looked to adjusting my threshold acceptance to improve the model.  When looking at the Roc Curve the Threshold value is where on the curve I am setting my acceptance, so the higher the value the more book summaries are classified as sci-fi. The default is .50 so I tried increasing it by .05 intervals comparing the results, and I use a final threshold value of 0.55.  This misclassifies more books as being science fiction than the lower threshold value, but increases the total number of predictions and in a real scenario it makes more sense to put more books in front of a user and let them choose what is important.
 
-I calculated precision and recall from my confusion matrix to evaluate the effectiveness of my model.
+I calculated precision and recall from my confusion matrix to evaluate the effectiveness of my model. These values are based on the threshold set and changing that will result in a more precise model or a better recall, but one must be sacrificed for the other.
 
 Recall = 60.7%
 Precision = 71.8%
 
 ![image](https://user-images.githubusercontent.com/25779351/116622185-e7947c80-a909-11eb-8fab-3e19338f613a.png)
 
-### Final Thoughts
+### Final Thoughts and Future Improvements
 
 My final model accuracy was 87.7% and my final list of important words is below.
 
