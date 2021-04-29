@@ -22,7 +22,13 @@ Using a train test split with the split at 75% training data I was able to get a
 
 The most most important words are displayed in the following figure.
 
-After looking at my most important words I decided I needed to add a stopword list.
+![body_scores](https://user-images.githubusercontent.com/25779351/116598461-785c5f80-a8ec-11eb-80f5-11e976039f70.png)
+
+
+
+After looking at my most important words I decided I needed to add a stopword list.  This removes words with no bearing on the context of the document and skew the accuracy of the model.
+
+
 
 This brought me some improvements and the next step was to stem my words.  I was still having some issues with accuracy and expanded my stop word list, including words that had a really heavy weight to them that would skew the whole model.
 
