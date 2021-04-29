@@ -7,15 +7,16 @@ For my final capstone project I am analyzing the wikipedia summaries for novels 
 <img src="https://user-images.githubusercontent.com/25779351/116443332-28609880-a819-11eb-8c9f-a6a75a0f4341.jpg" width="260" height="344">
 
 The dataset is the CMU Book Summary Dataset and the link to download is [here](http://www.cs.cmu.edu/~dbamman/booksummaries.html "CMU Book Summary Dataset").
-  
 
-The data came with 12841 entries and my first step was to clean the data and create a column of targets for a model.  Once the dataframe was organized I determined the genres were split at roughly 22.5% being science fiction and 77.5% not.
 
+The CMU dataset contains metadata including the author, title, genre and a body summary.My first step was to clean the data and create a column of targets for a model.  I am only interested in the genre and body because I want to focus on the contents of the summary to make a prediction, and I can use the genre data to create a new column of targets where the value is True (Sci-Fi) or False (not Sci-Fi)
+
+The Once the dataframe was organized I determined the genres were split at roughly 22.5% being science fiction and 77.5% not.
 
 ![Data_proportions](https://user-images.githubusercontent.com/25779351/116435335-db78c400-a810-11eb-8fce-1703b87faa24.png)
 
 
-Next step in the process is to build a basic model, and using sklearn I was able to get a random forest model working. I chose Random forest because I wanted to avoid overfitting, and I am able to adjust threshold values easier.
+Next step in the process is to build a basic model.  I chose to use the scikit learn random forest, and I was able to get model working using the default parameters and achieve an accuracy of 84%.
 
 Using a train test split with the split at 75% training data I was able to get an initial accuracy of 84%.
 
