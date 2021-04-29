@@ -16,7 +16,9 @@ Once the dataframe was organized I determined the genres were split at roughly 2
 
 ![Data_proportions](https://user-images.githubusercontent.com/25779351/116435335-db78c400-a810-11eb-8fce-1703b87faa24.png)
 
-Next step in the process was to build a basic model. I performed a train-test-split (75% training data), and I chose to use the scikit learn random forest for my model. Using the default parameters I was able achieve an accuracy of 84%.
+### Model Building
+
+Next step in the process was to build a basic model. I performed a train-test-split to seperate my data into a training set and a test set, and I chose to use the ensemble method random forest from scikit learn for my model. I chose a TF*IDF Using the default parameters I was able achieve an accuracy of 84%.
 
 The most most important words are displayed in the following figure.
 
@@ -30,7 +32,7 @@ Looking at these new words I extended my stop list, one of the words excluded wa
 
 I also tried to further improve the model with bi-grams but after a few attempts removed it as it instead reduced my overall accuracy and performance. The problem is bi-grams without implementing an extensive stopwords list increases the size of the corpus too much and the model can't decipher what is significant.
 
-With these new adjustments I produced a confusion matrix and Roc Curve plot. These the performance of the model on data that it has not been trained on, the "X_test" data from the train-test-split. The area under the roc curve represents the accuracy of the model, and the closer to 1 the more accurate it is.  The Confusion Matrix
+With these new adjustments I produced a Confusion Matrix and Roc Curve plot. These demonstrate the performance of the model on data that it has not been trained on, the "X_test" data from the train-test-split. The area under the Roc Curve represents the accuracy of the model and the closer to 1 the more accurate it is.  The Confusion Matrix shows how the books end up categorized allowing me to see which way I am misclassifying books. Am I excluding too many that belong, or including too many that don't?
 
 ![Confusion Matrix](https://user-images.githubusercontent.com/25779351/116619092-a39f7880-a905-11eb-9d7c-4f9fb947e95f.png)
 
@@ -38,11 +40,14 @@ With these new adjustments I produced a confusion matrix and Roc Curve plot. The
 ![first_roc](https://user-images.githubusercontent.com/25779351/116618993-7ce14200-a905-11eb-9975-129b1083d457.png)
 
 
-Lastly I looked to adjusting my threshold acceptance to improve the model.  The default is .50 so I tried increasing it by .05 intervals comparing the results, and I use a final threshold value of 0.55.  This misclassifies more books as being science fiction than the lower threshold value, but increases the total number of predictions and in a real scenario it makes more sense to put more books in front of a user and let them choose what is important.
+Lastly I looked to adjusting my threshold acceptance to improve the model.  When looking at the Roc Curve the Threshold value is where on the curve I am setting my acceptance, so the higher the value the more book summaries are classified as sci-fi. The default is .50 so I tried increasing it by .05 intervals comparing the results, and I use a final threshold value of 0.55.  This misclassifies more books as being science fiction than the lower threshold value, but increases the total number of predictions and in a real scenario it makes more sense to put more books in front of a user and let them choose what is important.
 
 I used precision and recall from my confusion matricies to evaluate the effectiveness of my model.
 
-I also did a count vectorizer to see what words were most popular in the various outcomes. The purpose of this was to see if the stopwords list could be improved with these lists.
+
+![image](https://user-images.githubusercontent.com/25779351/116622185-e7947c80-a909-11eb-8fab-3e19338f613a.png)
+
+
 
 get corpus:
   *separate book summaries out into seperate documents
@@ -69,3 +74,6 @@ loop3:
   *Create Roc Curve
   
 test eventually against some wikipedia article
+
+
+I also did a count vectorizer to see what words were most popular in the various outcomes. The purpose of this was to see if the stopwords list could be improved with these lists.
