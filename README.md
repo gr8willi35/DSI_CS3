@@ -16,14 +16,13 @@ The Once the dataframe was organized I determined the genres were split at rough
 ![Data_proportions](https://user-images.githubusercontent.com/25779351/116435335-db78c400-a810-11eb-8fce-1703b87faa24.png)
 
 
-Next step in the process is to build a basic model.  I chose to use the scikit learn random forest, and I was able to get model working using the default parameters and achieve an accuracy of 84%.
+Next step in the process is to build a basic model.  I chose to use the scikit learn random forest for I was able to get model working using the default parameters and achieve an accuracy of 84%.
 
 Using a train test split with the split at 75% training data I was able to get an initial accuracy of 84%.
 
 The most most important words are displayed in the following figure.
 
 ![body_scores](https://user-images.githubusercontent.com/25779351/116598461-785c5f80-a8ec-11eb-80f5-11e976039f70.png)
-
 
 
 After looking at my most important words I decided I needed to add a stopword list.  This removes words with no bearing on the context of the document and skew the accuracy of the model.
