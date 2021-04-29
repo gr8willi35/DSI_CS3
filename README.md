@@ -9,7 +9,7 @@ For my final capstone project I am analyzing the wikipedia summaries for novels 
 The dataset is the CMU Book Summary Dataset and the link to download is [here](http://www.cs.cmu.edu/~dbamman/booksummaries.html "CMU Book Summary Dataset").
 
 
-The CMU dataset contains metadata including the author, title, genre and a body summary.My first step was to clean the data and create a column of targets for a model.  I am only interested in the genre and body because I want to focus on the contents of the summary to make a prediction, and I can use the genre data to create a new column of targets where the value is True (Sci-Fi) or False (not Sci-Fi)
+The CMU dataset contains metadata including the author, title, genre and a body summary. My first step was to clean the data and create a column of targets for a model.  I am only interested in the genre and body because I want to focus on the contents of the summary to make a prediction, and I can use the genre data to create a new column of targets where the value is True (Sci-Fi) or False (not Sci-Fi)
 
 The Once the dataframe was organized I determined the genres were split at roughly 22.5% being science fiction and 77.5% not.
 
