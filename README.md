@@ -11,14 +11,14 @@ The dataset is the CMU Book Summary Dataset and the link to download is [here](h
 
 The CMU dataset contains metadata including the author, title, genre and a body summary. My first step was to clean the data and create a column of targets for a model.  I am only interested in the genre and body because I want to focus on the contents of the summary to make a prediction, and I can use the genre data to create a new column of targets where the value is True (Sci-Fi) or False (not Sci-Fi)
 
-The Once the dataframe was organized I determined the genres were split at roughly 22.5% being science fiction and 77.5% not.
+Once the dataframe was organized I determined the genres were split at roughly 22.5% being science fiction and 77.5% not.
 
 ![Data_proportions](https://user-images.githubusercontent.com/25779351/116435335-db78c400-a810-11eb-8fce-1703b87faa24.png)
 
 
-Next step in the process is to build a basic model.  I chose to use the scikit learn random forest for I was able to get model working using the default parameters and achieve an accuracy of 84%.
+Next step in the process was to build a basic model. I performed a train-test-split (75% training data), and I chose to use the scikit learn random forest for my model. Using the default parameters I was able achieve an accuracy of 84%.
 
-Using a train test split with the split at 75% training data I was able to get an initial accuracy of 84%.
+
 
 The most most important words are displayed in the following figure.
 
