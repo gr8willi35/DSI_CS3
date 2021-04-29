@@ -45,7 +45,7 @@ I calculated precision and recall from my confusion matrix to evaluate the effec
 Recall = 60.7%
 Precision = 71.8%
 
-![image](https://user-images.githubusercontent.com/25779351/116622185-e7947c80-a909-11eb-8fab-3e19338f613a.png)
+![image](https://user-images.githubusercontent.com/25779351/116624093-ec0e6480-a90c-11eb-89c0-262edbbe04fa.png)
 
 ### Final Thoughts and Future Improvements
 
