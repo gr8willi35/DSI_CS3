@@ -25,9 +25,9 @@ The most most important words are displayed in the following figure.
 ![body_scores](https://user-images.githubusercontent.com/25779351/116598461-785c5f80-a8ec-11eb-80f5-11e976039f70.png)
 
 
-After looking at my most important words I decided I needed to add a stopword list and implement stemming. Stopwords removes words with no bearing on the context of the document and skew the accuracy of the model.  Words like "the", "of", "and" etc. are dumped and the model can get a better accuracy score.  Stemming is the process of getting the root of words to reduce frequency.  In the most important words figure the reader may notice variations of "human".  By getting to the root word we can reduce the corpus and get a better idea of what words have an impact.  Below you can see the effects of these changes to our most important words list.!
+After looking at my most important words I decided I needed to add a stopword list and implement stemming. Stopwords removes words with no bearing on the context of the document and skew the accuracy of the model.  Words like "the", "of", "and" etc. are dumped and the model can get a better accuracy score.  Stemming is the process of getting the root of words to reduce frequency.  In the most important words figure the reader may notice variations of "human".  By getting to the root word we can reduce the corpus and get a better idea of what words have an impact.  Below you can see the effects of these changes to our most important words list.
 
-[Final Important Words](https://user-images.githubusercontent.com/25779351/116606073-d0e42a80-a8f5-11eb-8475-7d578cb29623.png)
+![Final Important Words](https://user-images.githubusercontent.com/25779351/116606073-d0e42a80-a8f5-11eb-8475-7d578cb29623.png)
 
 
 
