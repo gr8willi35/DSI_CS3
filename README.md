@@ -18,7 +18,7 @@ Once the dataframe was organized I determined the genres were split at roughly 2
 
 ### Model Building
 
-Next step in the process was to build a basic model. I performed a train-test-split to seperate my data into a training set and a test set, and I chose to use the ensemble method random forest from scikit learn for my model. I chose a TF*IDF Using the default parameters I was able achieve an accuracy of 84%.
+Next step in the process was to build a basic model. I performed a train-test-split to seperate my data into a training set and a test set, and I chose to use the ensemble method random forest from scikit learn for my model. I chose a TF&ast;IDF Using the default parameters I was able achieve an accuracy of 84%.
 
 The most most important words are displayed in the following figure.
 
@@ -37,7 +37,7 @@ With these new adjustments I produced a Confusion Matrix and Roc Curve plot. The
 ![Confusion Matrix](https://user-images.githubusercontent.com/25779351/116619092-a39f7880-a905-11eb-9d7c-4f9fb947e95f.png)
 
 
-![first_roc](https://user-images.githubusercontent.com/25779351/116618993-7ce14200-a905-11eb-9975-129b1083d457.png)
+![Roc](https://user-images.githubusercontent.com/25779351/116618993-7ce14200-a905-11eb-9975-129b1083d457.png)
 
 
 Lastly I looked to adjusting my threshold acceptance to improve the model.  When looking at the Roc Curve the Threshold value is where on the curve I am setting my acceptance, so the higher the value the more book summaries are classified as sci-fi. The default is .50 so I tried increasing it by .05 intervals comparing the results, and I use a final threshold value of 0.55.  This misclassifies more books as being science fiction than the lower threshold value, but increases the total number of predictions and in a real scenario it makes more sense to put more books in front of a user and let them choose what is important.
